@@ -27,4 +27,5 @@ class Car(ParkManage):
         print("车牌号为:%s\n停车时长:%s\n本次消费:%.2f元\n" % (self.car_number,P_time, consumption))
 
     def __str__(self):
+        """返回字符串信息"""
         return "%s %s %s %s %s" %(self.car_number,self.car_owner,self.contact_way,self.car_port,self.entrance_time)
